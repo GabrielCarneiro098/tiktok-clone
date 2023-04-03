@@ -35,11 +35,7 @@
     animation: moveText 5s infinite linear;
 }
 
-h3, p {
-    color: black;
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-                 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-  }
+
 
 @keyframes rotate {
     0%{
@@ -56,5 +52,15 @@ h3, p {
     }
     100%{
         transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .videoFooter {
+        bottom: 22%;
+    }
+
+    .videoFooterMusic__text {
+        width: 78%;
     }
 }
